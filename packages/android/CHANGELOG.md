@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.17.1](https://github.com/Viren070/AIOStreams/compare/android-v0.17.0...android-v0.17.1) (2026-11-20)
+
+
+### Bug Fixes
+
+* **android:** give Matroska FLAC tracks their largest frame as the input size ([b3dc825](https://github.com/Viren070/AIOStreams/commit/b3dc825762785d3c14ca40da92b0294fb74d5f19))
+
 ## [0.17.0](https://github.com/Viren070/AIOStreams/compare/android-v0.16.1...android-v0.17.0) (2026-11-19)
 
 
