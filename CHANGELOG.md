@@ -1,5 +1,84 @@
 # Changelog
 
+## [2.39.0](https://github.com/Viren070/AIOStreams/compare/v2.38.1...v2.39.0) (2026-11-20)
+
+
+### Features
+
+* accept @&lt;profile&gt; in the variant selector ([8fb2ef4](https://github.com/Viren070/AIOStreams/commit/8fb2ef4ef75c218feb13f079d067940ef7dc1c07))
+* add a hero band and backgroundVideo to collection pages ([ceb6086](https://github.com/Viren070/AIOStreams/commit/ceb6086bae71fc915159f7420a1f2e58064e96fc))
+* add an addon background to the Stremio manifest ([7a03cac](https://github.com/Viren070/AIOStreams/commit/7a03cac00fea96aa0819073300b8e64fec245446))
+* add settings for everyone and let the owner change other profiles' settings ([fac6866](https://github.com/Viren070/AIOStreams/commit/fac6866f4da1de825186fc255329c8a0d7a6e805))
+* **android:** blend subtitles on the GPU ([38d423e](https://github.com/Viren070/AIOStreams/commit/38d423e5eae6c0cf8329ebde8950036e9f4dbae1))
+* **builtins/xtream:** add a tested endpoint option and test the Xtream login with it ([ea65dec](https://github.com/Viren070/AIOStreams/commit/ea65decdb6e9dfecbfd9bf7efd3b45ebe151869c))
+* **desktop:** add graphics card super resolution ([5a8ed53](https://github.com/Viren070/AIOStreams/commit/5a8ed536a8aa343034ec8dcb111fb95ca998c66b))
+* **frontend:** add a regrouped configure layout ([708eb0d](https://github.com/Viren070/AIOStreams/commit/708eb0df9329cd1fff9d229c3882c1ab35ad257e))
+* **frontend:** link the trackers tab to the users tab when no user syncs ([1bad9f5](https://github.com/Viren070/AIOStreams/commit/1bad9f5ee5ca2648cc99b0ae1ca94569951a1616))
+* **jellyfin:** interleave, alternate or shuffle a collection's sources ([3602f0e](https://github.com/Viren070/AIOStreams/commit/3602f0ea670cf58c7e1d38d5182669b7f4c67977))
+* **newznab:** remove the Zyclops health proxy option ([#1836](https://github.com/Viren070/AIOStreams/issues/1836)) ([9bcec38](https://github.com/Viren070/AIOStreams/commit/9bcec3894bdfbb3a839d4fd6620d7ae99c520ded))
+* **prowlarr,nzbhydra:** proxy NZBs through AIOStreams with proxyAuth ([#1516](https://github.com/Viren070/AIOStreams/issues/1516)) ([0cca8b8](https://github.com/Viren070/AIOStreams/commit/0cca8b88168b8076ac9222d09f3c230058f6c7e3))
+* show a collection's sources as tabs or rows ([e65bf17](https://github.com/Viren070/AIOStreams/commit/e65bf17d399cd39f5acc2a4eddef664da512a2ba))
+* **web:** add a Live TV setting that takes channels off home or hides them ([9516158](https://github.com/Viren070/AIOStreams/commit/951615867e0fd000f613f4da1b3073a9f1e982e7))
+* **web:** add a picture-in-picture shortcut ([2f657c7](https://github.com/Viren070/AIOStreams/commit/2f657c743eb04a127aad18f0c6cbe668c9951d64)), closes [#1900](https://github.com/Viren070/AIOStreams/issues/1900)
+* **web:** add switches for each player gesture ([8aa6b0f](https://github.com/Viren070/AIOStreams/commit/8aa6b0f0e435da4be3b8698b2b3a907add6cf3b8))
+* **web:** give the saved servers one shared profile picker ([606c197](https://github.com/Viren070/AIOStreams/commit/606c1977e4605af6da5be00e80a2e1ac78e82718))
+* **web:** keep the pages Back returns to mounted ([a1848bb](https://github.com/Viren070/AIOStreams/commit/a1848bb22c8138d8f8f90ea3c8de424a69ada40a))
+* **web:** list other saved servers' profiles on the profile picker ([12ec7aa](https://github.com/Viren070/AIOStreams/commit/12ec7aa89279f56b7b6d9633fd6f99a596ea417d))
+* **web:** make the card preview one switch that opens by keys and pops out by mouse ([8bb813a](https://github.com/Viren070/AIOStreams/commit/8bb813a0f6afef7eea513510c51386c1d6dea03e))
+* **web:** open settings sections with the slide-over ([fbd96cc](https://github.com/Viren070/AIOStreams/commit/fbd96cc437d8bf697e24834eda5b975f1ab1c7d5))
+* **web:** pick the pages the artwork background shows behind ([b0d6c44](https://github.com/Viren070/AIOStreams/commit/b0d6c445b24b5e8a6558ab54155c704e37f7a9a1))
+* **web:** regroup the settings and add a search ([876fccb](https://github.com/Viren070/AIOStreams/commit/876fccb143fe77d4e83303ac1de932deab6b89cf))
+
+
+### Bug Fixes
+
+* **builtins/xtream:** answer Xtream provider failures with a 502 and their reason ([fc710dc](https://github.com/Viren070/AIOStreams/commit/fc710dc9314a87f81bf1937abfb3e9fef014a629))
+* **config:** add the precache switches to the inherited misc fields ([96eb779](https://github.com/Viren070/AIOStreams/commit/96eb779a96af80a411d521a503510d8ea89bafe7))
+* **config:** check MAX_GROUPS against the groupings ([0371b21](https://github.com/Viren070/AIOStreams/commit/0371b21b173fe7975b2ae2f90d1150697fa19457))
+* **core:** send requests with undici's request() instead of fetch() ([ad4a63a](https://github.com/Viren070/AIOStreams/commit/ad4a63aa03aa6d8d307329e3d7a4b8847e7425ea)), closes [#1778](https://github.com/Viren070/AIOStreams/issues/1778)
+* correct configure help text and the values shown for unset settings ([c028088](https://github.com/Viren070/AIOStreams/commit/c02808809c207f12951f0efb07bcdfcca7208063))
+* **deduplicator:** keep results whose type has no duplicate mode ([8d7af1c](https://github.com/Viren070/AIOStreams/commit/8d7af1ccb6c429a4ca66812c7539e5ed8f44a90d))
+* **deduplicator:** treat Per Service for P2P results as Single Result ([3b45766](https://github.com/Viren070/AIOStreams/commit/3b45766373a53065f446f9108acd1465106834c9))
+* **failover:** move on from a file blocked for legal reasons ([b6ce8c3](https://github.com/Viren070/AIOStreams/commit/b6ce8c31957990df1a43b3295bcdb805acb06bd9))
+* **filters:** test excluded and included seeder and age ranges as one range ([0161333](https://github.com/Viren070/AIOStreams/commit/01613334e86899de2742556d9cd837c96a973770))
+* **frontend:** put the phone page list left of Home ([42a94e8](https://github.com/Viren070/AIOStreams/commit/42a94e8dda5a172a9c293eb925aac02d9719f0fe))
+* **frontend:** show Stats to remembered sign-ins ([04da72b](https://github.com/Viren070/AIOStreams/commit/04da72b99577b73427c93893b84eed864a414b82))
+* **jellyfin:** drop removed addons from users' tracker picks ([7f44816](https://github.com/Viren070/AIOStreams/commit/7f44816f1f2823087fe6b9347d7f40e8e7351ee7))
+* **presets/yastream:** parse yastream's HLS streams as http rather than live ([4778b53](https://github.com/Viren070/AIOStreams/commit/4778b5319efcabd5d8737277b62d39f904e79f06)), closes [#1825](https://github.com/Viren070/AIOStreams/issues/1825)
+* **server:** verify the password before ending every config session ([e146a83](https://github.com/Viren070/AIOStreams/commit/e146a8338630091f7d1d2ab8baf507911423169b))
+* **sorter:** sort by preferred audio channels ([4c14faf](https://github.com/Viren070/AIOStreams/commit/4c14fafd5791c2349a8b35173782e1c90e447392))
+* **ui:** pass the Combobox's className to its trigger ([6c1a789](https://github.com/Viren070/AIOStreams/commit/6c1a78967098469dcd9fd51543a6b78bf56c3727))
+* **ui:** scroll carousels with sideways wheel gestures in place of the wheel drag plugin ([dba34a5](https://github.com/Viren070/AIOStreams/commit/dba34a50c2e00638871a8658a819fc0c657ab8ce))
+* **ui:** stop sideways wheel scrolling from flickering carousels ([20999af](https://github.com/Viren070/AIOStreams/commit/20999afa988c52455f5deb0a9da183a505fc37b5))
+* **usenet:** keep RAR volumes whose first article is missing in their set ([4a6a6a0](https://github.com/Viren070/AIOStreams/commit/4a6a6a04d2ffbd5d086b25c1cd637298cf97118a))
+* **web:** add Path to the version list's fields ([e4ae999](https://github.com/Viren070/AIOStreams/commit/e4ae99937b7f30e9363169a3a2ecfef730a96af4))
+* **web:** ask for addon subtitles once a version plays ([563e5bb](https://github.com/Viren070/AIOStreams/commit/563e5bb7401292dcbe09f6ae100b43a33c41d895)), closes [#1852](https://github.com/Viren070/AIOStreams/issues/1852)
+* **web:** bring up the controls on OK during a live stream ([28231d8](https://github.com/Viren070/AIOStreams/commit/28231d88d02e521ef6b9dce9fe95cf2ea2531a27))
+* **web:** clear the paper behind a select's scroll arrows on glass panels ([4704d5f](https://github.com/Viren070/AIOStreams/commit/4704d5f535d479c7d5f60854d1facde59babdba1))
+* **web:** clip a card grid while its preview pushes cards aside ([8f9c801](https://github.com/Viren070/AIOStreams/commit/8f9c801e502ee045943a0a1d7c55163a0e15118c))
+* **web:** don't retrace the jump out of a navigation box ([19a5251](https://github.com/Viren070/AIOStreams/commit/19a5251cdebf1e554febc79c635a728a2faa8c8e))
+* **web:** hide the pages' wash under a back slide to a page without it ([7dc719b](https://github.com/Viren070/AIOStreams/commit/7dc719b83f97b507d08b214f39d29c981e66ba69))
+* **web:** ignore a keyup with no key while nothing is held ([6e773ce](https://github.com/Viren070/AIOStreams/commit/6e773ce0cff7c41afa85049ae335a80952367262))
+* **web:** keep a scrolled-away bar away while a page scrolls down from its top ([6c9b384](https://github.com/Viren070/AIOStreams/commit/6c9b3845c0e85cd0c95fb1241013c75321715bf5))
+* **web:** keep a touch's focus from waking the player's hidden controls ([9d303ed](https://github.com/Viren070/AIOStreams/commit/9d303edb5bd0d6571c6838cfa7ff98f6125b2dc3))
+* **web:** leave mixed libraries out of Discover's collection picker ([4ddda91](https://github.com/Viren070/AIOStreams/commit/4ddda91ad401f6553d8d5e25b5f3837fdffae3ae))
+* **web:** leave the player's controls hidden on swipes, skips and pauses ([00e325b](https://github.com/Viren070/AIOStreams/commit/00e325b57d2109e4e1f7189e3ccdb73f52c5a1c7))
+* **web:** line up page titles and controls across pages ([d1effc2](https://github.com/Viren070/AIOStreams/commit/d1effc273078060827967e55fff6fe99e6b58a57))
+* **web:** paint the guide as an art wash panel ([99c864c](https://github.com/Viren070/AIOStreams/commit/99c864c4d1feae1df2824c456c6d602e6392a858))
+* **web:** put AVPlay's object under the page's background on Samsung TVs ([0368363](https://github.com/Viren070/AIOStreams/commit/0368363ca4f01b39329b5c9b53a207a02a699131))
+* **web:** ring a TV list's whole filter row ([56c761f](https://github.com/Viren070/AIOStreams/commit/56c761f3c9a6a4a94b94635bd9b1b2364c110c55))
+* **web:** save a found server at the address it answered at after redirects ([90915dc](https://github.com/Viren070/AIOStreams/commit/90915dc4818870f45c08c295901396387ba962ee)), closes [#1820](https://github.com/Viren070/AIOStreams/issues/1820)
+* **web:** send live streams a VLC user agent from the apps' players ([ca53b18](https://github.com/Viren070/AIOStreams/commit/ca53b181e56fd77ec9365d7126422123d7089a0d))
+* **web:** size the page background to the tallest viewport ([141bd75](https://github.com/Viren070/AIOStreams/commit/141bd75f188618b89e88be3019f1322b9ec839c4))
+* **web:** skip the browser's position state for live streams ([c9cfa00](https://github.com/Viren070/AIOStreams/commit/c9cfa008033d32b6e731ba633b1544a64a8cb879))
+* **web:** slide a page back the same way from either edge ([131365a](https://github.com/Viren070/AIOStreams/commit/131365a48bae42093660a3eb1fe04ffad498609c))
+* **web:** time the pause screen from the last input ([1904ff0](https://github.com/Viren070/AIOStreams/commit/1904ff0526c114f980deab1708085166df4f1831))
+
+
+### Performance Improvements
+
+* **frontend:** add the rest of the catalog list once the page has animated in ([2b4e219](https://github.com/Viren070/AIOStreams/commit/2b4e219de992acc109fd94f5b7b0bd91a6859ce1))
+
 ## [2.38.1](https://github.com/Viren070/AIOStreams/compare/v2.38.0...v2.38.1) (2026-11-14)
 
 
